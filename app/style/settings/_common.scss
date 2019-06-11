@@ -1,6 +1,6 @@
 $transparent: rgba(255, 255, 255, 0);
 $main-color: #3c3948;
-$accent-green: #74a228;
+$accent-green: #96c643;
 $accent-pink: #bb78bb;
 $accent-purple: #89387a;
 
@@ -101,17 +101,20 @@ svg {
 	text-decoration: none;
 	background-image: linear-gradient(
 		to right,
-		#a7e637,
-		#a5e634
+		#99df20,
+		#bdf45c,
+		#99df20
 	);
 	border-radius: 5px;
-	box-shadow: 0 5px 0 0 #97c642;
+	box-shadow:
+		0 5px 0 0 #97c642,
+		0 20px 10px -10px transparentize(#707960, 0.67);
 	cursor: pointer;
 
 	&__text {
 		font-size: 27px;
 		font-weight: 900;
-		line-height: 1;
+		line-height: (23 / 27);
 		text-align: center;
 	}
 
@@ -119,6 +122,17 @@ svg {
 		display: block;
 		margin-top: 5px;
 		font-size: 20px;
+		font-weight: 500;
 		line-height: 1;
 	}
+}
+
+.button:hover,
+.button:focus {
+	box-shadow: 0 5px 0 0 #97c642;
+}
+
+.button:active {
+	box-shadow: none;
+	transform: translateY(5px)
 }
