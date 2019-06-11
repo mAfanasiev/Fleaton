@@ -1,4 +1,8 @@
-// $mainColor: #000
+$transparent: rgba(255, 255, 255, 0);
+$main-color: #3c3948;
+$accent-green: #96c643;
+$accent-pink: #bb78bb;
+$accent-purple: #89387a;
 
 body {	
 	font-family: 'Roboto', sans-serif;
@@ -81,3 +85,64 @@ br {
 	white-space: nowrap;
 }
 
+.accent-green {
+	color: $accent-green;
+}
+
+.accent-pink {
+	color: $accent-pink;
+}
+
+.accent-purple {
+	color: $accent-purple;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 210px;
+	height: 65px;
+	margin: 0 auto 5px;
+	padding: 0;
+	color: #3c3a48;
+	font: inherit;
+	text-decoration: none;
+	background-image: linear-gradient(
+		to right,
+		#99df20,
+		#bdf45c,
+		#99df20
+	);
+	border-radius: 5px;
+	box-shadow:
+		0 5px 0 0 #97c642,
+		0 20px 10px -10px transparentize(#707960, 0.67);
+	cursor: pointer;
+
+	&__text {
+		font-size: 27px;
+		font-weight: 900;
+		line-height: (23 / 27);
+		text-align: center;
+	}
+
+	& small {
+		display: block;
+		margin-top: 5px;
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 1;
+	}
+}
+
+.button:hover,
+.button:focus {
+	box-shadow: 0 5px 0 0 #97c642;
+}
+
+.button:active {
+	box-shadow: none;
+	transform: translateY(5px)
+}
