@@ -1,0 +1,99 @@
+.reviews {
+    &__item {
+        width: 370px;
+        position: relative;
+        padding: 66px 31px 0;
+        margin: 0 15px;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            height: 159px;
+            width: 1px;
+            background: #e4e4e4;
+        }
+        &::before {
+            left: 34px;
+            top: 20px;
+        }
+        &::after {
+            right: 34px;
+            top: 138px;
+        }
+    }
+    &__img-box {
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 180px;
+            background: #e4e4e4;
+        }
+        &::before {
+            top: 55px;
+            left: 0px;
+        }
+        &::after {
+            top: 260px;
+            right: 0;
+        }
+        img {
+            margin: 0 auto;
+        }
+    }
+    &__name {
+        font-weight: 500;
+        font-size: 22px;
+    }
+    &__city {
+        font-style: italic;
+        font-size: 18px;
+        color: #89387a;
+        margin-top: 7px;
+    }
+    &__text {
+        font-size: 18px;
+        margin-top: 31px;
+        line-height: 1.6;
+        max-height: 255px;
+        overflow: hidden;
+        position: relative;
+        &_long {
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 30px;
+                background: linear-gradient(to top,#fff 0%,rgba(255,255,255,.7) 80%,transparent 100%);
+                bottom: 0;
+            }
+        }
+    }
+    &__left {
+        display: flex;
+        flex-direction: column;
+    }
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 38px;
+        padding-right: 15px;
+    }
+    &__icon-more-in {
+        position: relative;
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+
+        }
+        &::after {
+
+        }
+        &::before {
+
+        }
+    }
+}
