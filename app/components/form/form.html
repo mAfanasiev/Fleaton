@@ -1,0 +1,32 @@
+<form action="/submit" method="POST" class="x_order_form form">
+    <div class="form__body">
+        <div class="form__header">
+            <p class="form__caption">Успейте заказать со скидкой <span class="accent-purple">до <strong class="date-0">15.01.2019</strong></span></p>
+            <div class="form__price price">
+                <!--=include ./form__price.html -->
+            </div>
+            <p class="form__amount">Осталось упаковок <br>со скидкой: <span class="lastpack accent-pink">15</span></p>
+        </div>
+        <div class="form__main">
+            <div class="form__field form__field--name">
+                <img src="img/icon-name.svg" alt="" width="18">
+                <input type="text" name="name" placeholder="Моё имя" class="form__input" required>
+            </div>
+            <div class="form__field form__field--phone">
+                <img src="img/icon-phone.svg" alt="" width="20">
+                <input type="tel" name="phone" placeholder="Мой телефон" class="form__input" required>
+            </div>
+            <button class="form__button button" type="submit">
+                <span class="button__text">
+                    Заказать
+                    <small>со скидкой</small>
+                </span>
+            </button>
+            <p class="form__note">* при заказе курса</p>
+        </div>
+        <div class="form__footer">
+            <img src="img/icon-coins.svg" alt="" width="22">
+            Оплата после получения
+        </div>
+    </div>
+</form>
