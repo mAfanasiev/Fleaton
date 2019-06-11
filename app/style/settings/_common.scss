@@ -35,13 +35,23 @@ svg {
 		width: 100%;
 	}
 }
+br {
+	line-height: 0;
+	font-size: 0;
+}
 .grey {
 	background-color: #f6f6f6;
 }
-.title {	
+.big-orange {
+	color: #f8c883;
+	text-transform: uppercase;
+}
+.title {
+	text-align: center;
 	font-size: 44px;
 	line-height: 1;
 	font-weight: 900;
+	color: #3c3948;
 	@include r(1219){
 		font-size: 40px;
 	}

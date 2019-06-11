@@ -1,0 +1,166 @@
+.warning {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  text-align: center;
+
+  &__content {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__subtitle {
+    margin-top: 10px;
+    color: #66656b;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  &__item {
+    width: 270px;
+    &--mt {
+      margin-top: 68px;
+    }
+    &-title {
+      margin-top: 12px;
+      color: #3c3948;
+      font-size: 22px;
+      font-weight: 700;
+      &--mt {
+        margin-top: 15px;
+      }
+    }
+    &-text {
+      margin-top: 16px;
+      font-size: 20px;
+      color: #66656b;
+      line-height: 26px;
+    }
+  }
+  &__des {
+    margin-top: 17px;
+    font-size: 44px;
+    font-weight: 700;
+  }
+  &__footer {
+    font-size: 24px;
+    color: #3c3948;
+    margin-top: 9px;
+  }
+}
+.red {
+  color: #ea462b;
+}
+@include r(1219) {
+  .warning {
+    &__content {
+      margin-top: 30px;
+    }
+    &__item {
+      width: 230px;
+      &--mt {
+        margin-top: 30px;
+      }
+      &-title {
+        font-size: 20px;
+      }
+      &-text {
+        font-size: 18px;
+        line-height: 1.3;
+      }
+    }
+    &__des {
+      font-size: 40px;
+      margin-top: 20px;
+    }
+    &__footer {
+      margin-top: 5px;
+      font-size: 22px;
+    }
+  }
+}
+
+@include r(1023) {
+  .warning {
+    &__subtitle {
+
+    }
+    &__item {
+      width: 170px;
+      &-title {
+        font-size: 18px;
+      }
+      &-text {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+    }
+
+    &__des {
+      font-size: 36px;
+    }
+    &__footer {
+      font-size: 20px;
+    }
+  }
+}
+
+@include r(767) {
+  .warning {
+    &__subtitle {
+      font-size: 18px;
+      margin-top: 10px;
+      line-height: 1.2;
+    }
+    &__content {
+      justify-content: space-around;
+      margin-top: 0;
+    }
+    &__item {
+      margin-top: 30px;
+      width: 50%;
+      padding-right: 10px;
+      padding-left: 10px;
+      & br {
+        display: none;
+      }
+      &-title {
+        margin-top: 10px;
+      }
+    }
+    &__footer {
+      font-size: 18px;
+    }
+    &__des {
+      font-size: 32px;
+    }
+  }
+}
+@include r(639) {
+  .warning {
+
+    &__des {
+      font-size: 29px;
+    }
+  }
+}
+
+@include r(479) {
+  .warning {
+    &__item {
+      width: 100%;
+      padding: 0;
+      &-text {
+        max-width: 300px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    &__des {
+      font-size: 26px;
+    }
+  }
+}

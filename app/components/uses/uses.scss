@@ -1,0 +1,33 @@
+.uses {
+  padding-top: 80px;
+}
+
+@include r(1219) {
+  .uses {
+
+  }
+}
+
+@include r(1023) {
+  .uses {
+
+  }
+}
+
+@include r(767) {
+  .uses {
+
+  }
+}
+
+@include r(639) {
+  .uses {
+
+  }
+}
+
+@include r(479) {
+  .uses {
+
+  }
+}
