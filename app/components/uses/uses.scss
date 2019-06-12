@@ -1,0 +1,271 @@
+.uses {
+  padding-top: 55px;
+  padding-bottom: 154px;
+  background-image: url("../img/uses-background.jpg");
+  background-position: bottom 50px center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.uses__container {
+  position: relative;
+}
+
+.uses__title {
+  margin: 0 auto 10px;
+  text-align: center;
+
+  & strong {
+    text-transform: uppercase;
+  }
+}
+
+.uses__how-to {
+  position: relative;
+  z-index: 1;
+  max-width: 484px;
+  padding-top: 66px;
+  padding-bottom: 62px;
+  padding-left: 43px;
+
+  &::before {
+    left: -34px;
+  }
+}
+
+.uses__caption {
+  margin-bottom: 41px;
+  font-size: 70px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.uses__list {
+  counter-reset: uses-list;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13%;
+    left: 13%;
+    width: 271px;
+    height: 298px;
+    background-image: url("../img/uses-list-separators.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+}
+
+.uses__item {
+  counter-increment: uses-list;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  line-height: (30 / 26);
+
+  &::before {
+    content: counter(uses-list);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    color: white;
+    font-weight: 700;
+    line-height: 1;
+    background-image: url("../img/uses-shape.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  &--01 {
+    padding-left: 8px;
+  }
+
+  &--01::before {
+    margin-right: 20px;
+    width: 113px;
+    height: 113px;
+    font-size: (60 / 26) + em;
+  }
+
+  &--02 {
+    flex-direction: row-reverse;
+    margin-top: 23px;
+    margin-bottom: 32px;
+    padding-right: 79px;
+  }
+
+  &--02::before {
+    width: 144px;
+    height: 144px;
+    margin-left: 20px;
+    font-size: (80 / 26) + em;
+  }
+
+  &--03 {
+    padding-left: 10px;
+  }
+
+  &--03::before {
+    width: 105px;
+    height: 105px;
+    margin-right: 20px;
+    font-size: (60 / 26) + em;
+  }
+}
+
+.uses__person {
+  position: absolute;
+  bottom: -178px;
+  left: 18%;
+  left: calc(18% + 2px);
+  pointer-events: none;
+  
+  & .girl {
+    display: block;
+    min-width: 1323px;
+  }
+}
+
+.uses__pack {
+  position: absolute;
+  bottom: 37px;
+  left: 39%;
+  width: 263px;
+}
+
+@include r(1219) {
+  .uses {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .uses__how-to {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+
+  .uses__caption {
+    font-size: 62px;
+  }
+
+  .uses__item {
+    font-size: 24px;
+  }
+
+  .uses__person {
+    bottom: -57px;
+    left: 22%;
+  }
+
+  .uses__person .girl {
+    min-width: 1000px;
+  }
+}
+
+@include r(1023) {
+  .uses {
+    background-position: bottom left 30%;
+  }
+
+  .uses__title {
+    margin-bottom: 50px;
+  }
+  
+  .uses__how-to {
+    max-width: 300px;
+    margin-left: 20px;
+    padding: 0;
+  }
+
+  .uses__how-to::before,
+  .uses__how-to::after {
+    content: none;
+  }
+
+  .uses__caption {
+    margin-bottom: 15px;
+    font-size: 32px;
+  }
+
+  .uses__list::before {
+    content: none;
+  }
+
+  .uses__item {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .uses__item + .uses__item {
+    margin-top: 15px;
+  }
+
+  .uses__item::before {
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    margin-right: 15px;
+    font-size: 3em;
+  }
+
+  .uses__item--02 {
+    flex-direction: row;
+  }
+
+  .uses__person {
+    bottom: -52px;
+    left: 25%;
+  }
+
+  .uses__person .girl {
+    min-width: 700px;
+  }
+
+  .uses__pack {
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@include r(767) {
+  .uses__item {
+    font-size: 18px;
+  }
+
+  .uses__person {
+    bottom: -42px;
+    left: 20%;
+  }
+}
+
+@include r(639) {
+  .uses__title {
+    margin-bottom: 25px;
+  }
+
+  .uses__how-to {
+    margin: 0 auto;
+  }
+  .uses__caption {
+    display: none;
+  }
+
+  .uses__person {
+    display: none;
+    left: 54%;
+    transform: translateX(-50%);
+    opacity: 0.3;
+  }
+
+  .uses__person .girl {
+    min-width: 650px;
+  }
+}
