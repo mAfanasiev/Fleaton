@@ -9,14 +9,14 @@ $('.reviews__list').slick({
     centerMode: true,
     responsive: [
         {
-            breakpoint: 1023,
+            breakpoint: 1024,
             settings: {
                 slidesToShow: 2,
                 centerMode: false
             }
         },
         {
-            breakpoint: 767,
+            breakpoint: 768,
             settings: {
                 slidesToShow: 1
             }

@@ -65,7 +65,7 @@
         font-size: 18px;
         margin-top: 31px;
         line-height: 1.6;
-        max-height: 255px;
+        max-height: 340px;
         overflow: hidden;
         position: relative;
         transition: max-height .3s linear;
@@ -166,6 +166,7 @@
     &__arrow {
         cursor: pointer;
         position: absolute;
+        z-index: 1;
         &:hover path {
             fill: #89387a;
         }
@@ -261,11 +262,14 @@
         &__item {
             margin: 0 5px;
         }
-        &__arrow_left {
-            left: 0;
-        }
-        &__arrow_right {
-            right: 0;
+        &__arrow {
+            top: 390px;
+            &_left {
+                left: 10px;
+            }
+            &_right {
+                right: 10px;
+            }
         }
     }
 }
