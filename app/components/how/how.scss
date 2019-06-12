@@ -1,0 +1,123 @@
+.how {
+  padding-top: 76px;
+  padding-bottom: 76px;
+
+  &__content {
+    width: 100%;
+    margin-top: 66px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    width: 370px;
+    text-align: center;
+    &-img {
+      width: 100%;
+      line-height: 0;
+      position: relative;
+    }
+    &-prod {
+      position: absolute;
+      width: 130px;
+      bottom: -19px;
+      left: 56px;
+    }
+    &-el {
+      position: absolute;
+      width: 84px;
+      bottom: -32px;
+      left: 52px;
+    }
+    &-line {
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      &::before, &::after {
+        content: '';
+        position: absolute;
+        background-color: #e4e4e4;
+      }
+      &::before {
+        width: 180px;
+        height: 1px;
+      }
+      &::after {
+        height: 180px;
+        width: 1px;
+      }
+      &--top {
+        left: 0;
+        top: -46px;
+
+        &::before {
+          left: 0;
+          top: 35px;
+        }
+        &::after {
+          left: 34px;
+          top: 0px;
+        }
+      }
+      &--bottom {
+        right: 0;
+        bottom: -46px;
+        &::before {
+          right: 0;
+          bottom: 35px;
+        }
+        &::after {
+          right: 34px;
+          bottom: 0;
+        }
+      }
+    }
+    &-wrap {
+      width: 100%;
+      margin-top: 54px;
+    }
+    &-title {
+      color: #000000;
+      font-weight: 700;
+      font-size: 22px;
+    }
+    &-text {
+      margin-top: 14px;
+      font-size: 20px;
+      color: #66656b;
+      line-height: 28px;
+    }
+  }
+  &__orange {
+    color: #f8c883;
+  }
+}
+
+@include r(1219) {
+  .how {
+
+  }
+}
+
+@include r(1023) {
+  .how {
+
+  }
+}
+
+@include r(767) {
+  .how {
+
+  }
+}
+
+@include r(639) {
+  .how {
+
+  }
+}
+
+@include r(479) {
+  .how {
+
+  }
+}
