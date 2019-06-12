@@ -40,6 +40,9 @@
 
 @include r(1023) {
   .symptoms {
+    &.block {
+      padding-top: 10px;
+    }
     &__item {
       width: 170px;
       &-text {

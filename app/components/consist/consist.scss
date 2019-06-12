@@ -194,7 +194,8 @@
 
 @include r(1219) {
   .consist {
-
+    padding-top: 60px;
+    padding-bottom: 180px;
     &__subtitle {
       margin-top: 15px;
     }

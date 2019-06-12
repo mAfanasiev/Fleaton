@@ -94,6 +94,8 @@
 
 @include r(1219) {
   .how {
+    padding-top: 60px;
+    padding-bottom: 60px;
     &__content {
       margin-top: 30px;
     }
