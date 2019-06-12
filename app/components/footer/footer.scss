@@ -11,7 +11,9 @@
 	justify-content: space-between;
 	align-items: center;
 }
-
+.footer__company {
+	margin-bottom: 5px;
+}
 .footer__left {
 	display: flex;
 	justify-content: flex-start;
@@ -22,8 +24,13 @@
 	max-width: 54px;
 	margin-right: 20px;
 }
-
+.footer__addres {
+	margin-bottom: 5px;
+}
 .footer__name {
+	color: #f8c882;
+	text-transform: uppercase;
+	font-weight: 700;
 	margin-bottom: 5px;
 }
 
@@ -32,11 +39,11 @@
 }
 
 .footer__privacy {
-	color: inherit;
+	color: #89387a;
 	text-align: center;
 
 	display: block;
-	margin-bottom: 5px;
+
 	&:hover {
 		text-decoration: underline;
 	}
@@ -53,6 +60,7 @@
 
 @include r(1023) {
 	.footer {
+		padding-top: 0;
 		font-size: 15px;
 	}
 }
@@ -68,7 +76,8 @@
 		margin-bottom: 5px;
 	}
 
-	.footer__right {
+	.footer__right,
+	.footer__company {
 		display: none;
 	}
 

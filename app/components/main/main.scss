@@ -132,23 +132,7 @@
 }
 
 .main__pack {
-  position: relative;
-
-  & img {
-    display: block;
-    max-width: 100%;
-  }
-
-  & .pack {
-    margin-left: 100px;
-    margin-bottom: 37px;
-  }
-
-  & .chesnut {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+  width: 519px;
 }
 
 .main__form {
@@ -166,9 +150,8 @@
     font-size: 17px;
   }
 
-  .main__pack .pack {
-    margin-left: 30px;
-    max-width: 80%;
+  .main__pack {
+    width: 400px;
   }
 }
 
@@ -247,11 +230,7 @@
   }
   
   .main__product {
-    width: 50%;
-  }
-
-  .main__pack .pack {
-    max-width: 100%;
+    width: 55%;
   }
 }
 
@@ -293,11 +272,12 @@
     margin: 0 auto 20px;
   }
 
-  .main__pack .pack {
+  .main__pack .pack__product {
     margin: 0;
+    max-width: 100%;
   }
 
-  .main__pack .chesnut {
+  .main__pack .pack__chesnut {
     display: none;
   }
 

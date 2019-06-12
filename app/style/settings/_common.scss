@@ -1,12 +1,16 @@
 $transparent: rgba(255, 255, 255, 0);
 $main-color: #3c3948;
 $accent-green: #96c643;
+$accent-orange: #f8c883;
 $accent-pink: #bb78bb;
 $accent-purple: #89387a;
 
 body {	
 	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
+	overflow-x: hidden;
+}
+body, html {
 	overflow-x: hidden;
 }
 
@@ -39,14 +43,23 @@ svg {
 		width: 100%;
 	}
 }
+br {
+	line-height: 0;
+	font-size: 0;
+}
 .grey {
 	background-color: #f6f6f6;
+}
+.big-orange {
+	color: #f8c883;
+	text-transform: uppercase;
 }
 .title {
 	text-align: center;
 	font-size: 44px;
 	line-height: 1;
 	font-weight: 900;
+	color: #3c3948;
 	@include r(1219){
 		font-size: 40px;
 	}
@@ -78,6 +91,10 @@ svg {
 
 .accent-green {
 	color: $accent-green;
+}
+
+.accent-orange {
+	color: $accent-orange;
 }
 
 .accent-pink {
@@ -136,4 +153,31 @@ svg {
 .button:active {
 	box-shadow: none;
 	transform: translateY(5px)
+}
+
+.decoration-border {
+	position: relative;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		width: 180px;
+		height: 159px;
+		pointer-events: none;
+	}
+
+	&::before {
+		top: 0;
+		left: 0;
+		background-image: url("../img/decorate-border-top-left.svg");
+		background-position: center center;
+	}
+
+	&::after {
+		bottom: 0;
+		right: 0;
+		background-image: url("../img/decorate-border-bottom-right.svg");
+		background-position: center center;
+	}
 }
