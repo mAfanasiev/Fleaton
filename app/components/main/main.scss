@@ -2,7 +2,7 @@
   position: relative;
   color: $main-color;
   background-image: url("../img/main-background.jpg");
-  background-position: top center;
+  background-position: bottom 245px center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -74,6 +74,7 @@
   color: $accent-purple;
   font-size: 26px;
   line-height: (28 / 26);
+  font-weight: 400;
   font-style: italic;
 }
 
