@@ -169,7 +169,7 @@
 
   .research__pack {
     width: 300px;
-    top: -40px;
+    top: -20px;
     right: 20px;
   }
 
@@ -197,9 +197,16 @@
   .research__title {
     margin-bottom: 25px;
   }
-
+  .research__caption p {
+    max-width: 320px;
+  }
   .research__stats-item {
     max-width: 200px;
+  }
+  .research__pack {
+    width: 260px;
+    top: 0px;
+    right: 10px;
   }
 
   .research__stat {
